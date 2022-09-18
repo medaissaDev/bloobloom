@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {
-  COLLECTIONS,
-  DEFAULT_PARAMS,
-  GLASSESAPIURL,
-} from "../../../consts/const";
+import { COLLECTIONS, DEFAULT_PARAMS, GLASSESAPIURL } from "../../../consts/";
 import Spinner from "react-bootstrap/Spinner";
 import { Card, Col, Row } from "react-bootstrap";
 import { FilterSvg } from "../../svg";
@@ -486,19 +482,17 @@ glass_variant_frame_variant_frame_tag_configuration_names][]=${element.value}`;
           )}
         </>
       )}
-      {!COLLECTIONS.includes(params.name) &&
-        glasses.length ===
-          0(
-            <div>
-              <Row className="mt-5">
-                <Col>
-                  <div className="d-flex justify-content-center">
-                    <h3>Collection not found!</h3>
-                  </div>
-                </Col>
-              </Row>
-            </div>
-          )}
+      {!COLLECTIONS.includes(params.name) && glasses.length === 0 && (
+        <div>
+          <Row className="mt-5">
+            <Col>
+              <div className="d-flex justify-content-center">
+                <h3>Collection not found!</h3>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      )}
     </div>
   );
 };
