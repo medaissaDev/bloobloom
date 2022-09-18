@@ -1,0 +1,127 @@
+.glasses-page-header {
+  .header {
+    border-bottom: 1px solid #000;
+  }
+
+  .container {
+    display: unset;
+  }
+
+  .logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    svg {
+      width: 138px;
+      height: 22px;
+    }
+  }
+  .menu {
+    .menu-item {
+      cursor: pointer;
+      text-align: center;
+      color: #000 !important;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12.5px;
+      line-height: 14px;
+      letter-spacing: 2px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .side-menu {
+    position: fixed;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background: #fff;
+    left: -600px;
+    height: calc(100vh - 50px);
+    transition: 0.6s;
+    z-index: 1001;
+  }
+
+  .second-side-menu {
+    left: -600px;
+  }
+
+  .side-menu-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .side-menu-main-tab {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    &:hover {
+      background-color: #000 !important;
+      .side-menu-tab-title {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .side-menu-tab-icon {
+    margin-right: 18px;
+  }
+
+  .side-menu-open {
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom: none;
+    left: 0;
+  }
+  .side-menu-tab-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 18px;
+  }
+
+  .side-menu-main-tab-back {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    padding-left: 19px;
+  }
+
+  @media (min-width: 1366px) {
+    .logo svg {
+      width: 138px;
+      height: 22px;
+    }
+  }
+  @media (max-width: 499.9px) {
+    .logo svg {
+      width: 107.56px;
+      height: 16.68px;
+    }
+    .side-menu {
+      width: 100%;
+    }
+  }
+}

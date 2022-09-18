@@ -1,0 +1,141 @@
+.glasses-view {
+  .filter-container {
+    border: 1px solid;
+  }
+  .filter-title {
+    border-right: 1px solid #000;
+    text-align: center;
+    .row .col {
+      border-bottom: 1px solid;
+    }
+  }
+
+  .col-image {
+    padding-right: unset;
+    padding-left: unset;
+  }
+
+  .colour-div {
+    cursor: pointer;
+    height: 24px;
+    margin: 11px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &:hover {
+      .colour-cover {
+        border: 1px solid #000;
+      }
+    }
+  }
+  .colour-cover {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-right: 7px;
+    span {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      height: 16px;
+      width: 16px;
+      border-radius: 100%;
+    }
+    &:hover {
+      border: 1px solid #000;
+    }
+  }
+
+  .shapes-row {
+    padding-top: 9%;
+  }
+
+  .shapes {
+    border-bottom: unset !important;
+  }
+
+  .shape-div {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .clear-filter {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .glasses-cards {
+    .col {
+      padding-right: unset !important;
+      padding-left: unset !important;
+    }
+    .card {
+      border: 1px solid;
+      border-radius: 0%;
+    }
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  .filter-list {
+    font-size: 14px;
+  }
+
+  .border-filter {
+    border: 1px solid #000;
+  }
+
+  .clicked {
+    text-decoration: underline;
+  }
+
+  .filter-div-counter {
+    z-index: 1;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    top: -8px;
+    right: 0.5%;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 1px 1px 1pxrgba (0, 0, 0, 0.7);
+    font-family: "Acumin Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+  }
+
+  .filter-div-btn {
+    display: flex;
+    position: relative;
+  }
+
+  @media (max-width: 499.9px) {
+    .shapes-row {
+      padding-top: 1%;
+    }
+    .shapes {
+      display: flex;
+      padding-top: 5px;
+      padding-left: 19px;
+    }
+  }
+}
